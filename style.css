@@ -1,0 +1,151 @@
+*{
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+
+}
+
+
+body{
+height: 100%;
+width: 100%;
+font-family: sans-serif, 'Roboto';
+background-color: #3d3d3d;
+
+}
+
+
+
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+
+h2{
+margin: 10px;
+color: aliceblue;
+
+
+}
+
+
+.meals-container{
+display: flex;
+flex-wrap: wrap;
+width: 80%;
+justify-content: space-around;
+color: #d1d1d1;
+font-weight: 300;
+padding: 15px;
+
+}
+
+
+.meals-container h1{
+ font-size: 30px;   
+}
+
+
+
+.meals-container p{
+line-height: 40px;
+
+}
+
+
+
+
+.mealInfo{
+position: relative;
+width: 200px;  
+margin: 20px;  
+display: flex;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+}
+
+
+
+
+.overlay{
+position: absolute;
+top:0;
+bottom: 0;
+left: 0;
+right: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0,0,0,0.494);
+z-index: 1;
+visibility: hidden;
+opacity: 0;
+
+}
+
+
+
+
+.mealInfo h4{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+text-align: center;
+font-weight: normal;
+color: aliceblue;
+z-index: 2;
+visibility: hidden;
+opacity: 0;
+}
+
+
+
+.mealInfo img{
+width: 100%;    
+}
+
+
+
+
+.mealInfo :hover .overlay .mealInfo :hover h4{
+visibility: visible;
+opacity: 1;
+}
+
+
+
+
+#form{
+ display: flex; 
+ width: 600px;  
+}
+
+
+
+#btn{
+padding: 0px 20px; 
+text-transform: uppercase;   
+}
+
+
+
+
+#back{
+text-decoration: none;
+border: 1px solid white;
+color: white;
+padding: 10px  20px;
+width: 100px;
+text-align: center;
+}
+
+
+
+
+ 
